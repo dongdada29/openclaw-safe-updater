@@ -7,8 +7,13 @@
     <key>ProgramArguments</key>
     <array>
         <string>/bin/bash</string>
-        <string>/Users/louis/workspace/scripts/openclaw-updater.sh</string>
+        <string>${HOME}/workspace/openclaw-safe-updater/openclaw-updater.sh</string>
     </array>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>LOG_DIR</key>
+        <string>${HOME}/workspace/logs</string>
+    </dict>
     <key>StartCalendarInterval</key>
     <array>
         <dict>
@@ -23,8 +28,8 @@
     <key>RunAtLoad</key>
     <false/>
     <key>StandardOutPath</key>
-    <string>/Users/louis/workspace/logs/openclaw-updater.log</string>
+    <string>${HOME}/workspace/logs/openclaw-updater.log</string>
     <key>StandardErrorPath</key>
-    <string>/Users/louis/workspace/logs/openclaw-updater.error.log</string>
+    <string>${HOME}/workspace/logs/openclaw-updater.error.log</string>
 </dict>
 </plist>
